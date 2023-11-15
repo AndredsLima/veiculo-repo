@@ -4,6 +4,10 @@ public class Main {
     Carro meuCarro = new Carro();
     meuCarro.setCarroInfo("Toyota", "Touro", 2022);
     meuCarro.getCarroInfo();
+    
+    meuCarro.percorrido(100);
+    
+    System.out.println("Quilometragem: " + meuCarro.getQuilometragem());
 
   }
 }
