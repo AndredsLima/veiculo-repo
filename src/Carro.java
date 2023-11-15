@@ -1,22 +1,22 @@
-// --------------Atributos-------------------------------------------
 public class Carro {
     public String marca, modelo;
     public int ano;
     private int quilometragem;
-
-    public int autonomiaBateria;
+    public static Motor motor;
+    
 
     // -------------Construtor-------------------------------------------
     public Carro() {
 
     }
 
-    public Carro(String marca, String modelo, int ano) {
+    public Carro(String marca, String modelo, int ano, Motor motor) {
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
-        
-}
+        this.motor = motor;
+
+    }
 
     // --------------------Métodos -----------------------------------
 
@@ -42,7 +42,16 @@ public class Carro {
 
     }
 
-    
+    public void ligar() {
+        if (motor != null) {
+            motor.ligarMotor();
+
+        } else {
+            System.out.println("Este carro está sem motor !");
+        }
+
+    }
+
     // -----------Métodos Especiais------------
 
     public String getMarca() {
@@ -77,5 +86,15 @@ public class Carro {
         this.quilometragem = quilometragem;
     }
 
+    public Motor getMotor() {
+        return motor;
+    }
+
+    public void setMotor(Motor motor) {
+        this.motor = motor;
+    }
+
+    
 
 }
+
