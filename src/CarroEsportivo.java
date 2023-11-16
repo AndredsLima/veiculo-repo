@@ -1,3 +1,8 @@
+
+/**
+ * @author @emanuelduann
+ */
+
 public class CarroEsportivo extends Carro {
     public int velocidadeMaxima;
     // --------------Método--------------------------

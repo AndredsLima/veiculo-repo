@@ -1,3 +1,7 @@
+
+/**
+ * @author @Antony-Oliveira
+ */
 public class CarroEletrico extends Carro {
     public int autonomiaBateria;
 

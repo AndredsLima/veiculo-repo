@@ -1,3 +1,7 @@
+/**
+ * @author @BrenooNogg
+ */
+
 // --------------Atributos----------------------
 public class Motor {
     public String tipo;
