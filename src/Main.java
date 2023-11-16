@@ -19,6 +19,12 @@ public class Main {
 
         System.out.println("Quilometragem: " + meuCarro.getQuilometragem());
 
+        System.out.println("Carro esportivo");
+
+        CarroEsportivo meuCarroEsportivo = new CarroEsportivo();
+        meuCarroEsportivo.setCarroInfo("McLaren", "Artura", 2022);
+        meuCarroEsportivo.setVelocidadeMaxima(800);
+        System.out.println(meuCarroEsportivo);
         
 
     }
